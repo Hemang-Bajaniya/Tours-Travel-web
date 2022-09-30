@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Booking Page</title>
+	<link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+<body>
+	<header id="home">
+		<nav>
+			<a href="#"><img src="img/logo.png"></a>
+
+			<div class="nav-link">
+				<a href="index.html#home" target="_blank">Home</a>
+				<a href="index.html#events" target="_self">Events</a>
+				<a href="index.html#upcomings" target="_blank">Upcomings</a>
+				<a href="index.html#contact" target="_blank">Contact Us</a>
+				<button>BOOK NOW</button>
+			</div>
+
+			<div class="menu" id="menu">
+			<div class="hemburger" id="hemburger" onclick="onClick()">
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class="bar bar3"></div>
+			</div>
+
+			<div class="list" id="list">
+        		<ul>
+            		<li><a href="index.html#home" target="_blank">Home</a></li>
+            		<li><a href="index.html#events" target="_blank">Events</a></li>
+            		<li><a href="index.html#upcomings" target="_blank">Upcomings</a></li>
+            		<li><a href="index.html#contact" target="_blank">Contact Us</a></li>
+					<button>BOOK NOW</button>
+        		</ul>
+    		</div>
+    	</div>
+		</nav>	
+		</header>
+
+		<div class="main">
+		<section id="banner">
+			<div class="banner"> 
+				<img src="img/bg.webp">
+				<div class="txt">
+					<h1>Explore The World</h1>
+					<button>BOOK NOW</button>
+				</div>
+			</div>
+
+			<div class="book">
+				<form>
+					<div class="block">
+						<label>Enter location</label>
+						<input type="text" name="" placeholder="Ex:Manali">
+					</div>
+
+					<div class="block">
+						<label>Check In</label>
+						<input type="date" name="">
+					</div>
+					
+					<div class="block">
+						<label>Check Out</label>
+						<input type="date" name="">
+					</div>
+					<div class="block">
+						<button>Find</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		</div>
+</body>
+<script type="text/javascript">
+	function onClick() {
+    document.getElementById('hemburger').classList.toggle("hemburger-change");
+    document.getElementById('list').classList.toggle("list-change");
+    document.getElementById('menu').classList.toggle("change");
+}
+</script>
+</html>

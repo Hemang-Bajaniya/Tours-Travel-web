@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tours-Travel website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header id="home">
+		<nav id="navbar">
+			<a href="#"><img src="img/logo.png"></a>
+			<div class="nav-link">
+				<a href="#home">Home</a>
+				<a href="#events">Events</a>
+				<a href="#upcomings">Upcomings</a>
+				<a href="#contact">Contact Us</a>
+				<button onclick="window.open('Booking-page.html','_blank')">BOOK NOW</button>
+			</div>
+
+			<div class="menu" id="menu">
+			<div class="hemburger" id="hemburger" onclick="onClick()">
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class="bar bar3"></div>
+			</div>
+
+			<div class="list" id="list">
+        		<ul>
+            		<li><a href="#home">Home</a></li>
+            		<li><a href="#events">Events</a></li>
+            		<li><a href="#upcomings">Upcomings</a></li>
+            		<li><a href="#contact">Contact Us</a></li>
+					<button onclick="window.open('Booking-page.html','_blank')">BOOK NOW</button>
+        		</ul>
+    		</div>
+    	</div>
+
+		</nav>
+		<div class="content" id="cta">
+			<h1>Explore The Beautiful Earth</h1>
+			<span class="line"></span>
+			<h3>Pack your bags and departure to the unknown land</h3>
+
+			<a href="Booking-page.html" target="_blank"><button>BOOK NOW</button></a>
+		</div>
+	</header>
+
+	<section>
+		<div class="upcoming" id="events">
+			<h1>UPCOMING EVENTS</h1>
+
+			<span class="line2"></span>
+
+			<div class="events">
+				<div class="card">
+					<img src="img/everest.jpeg" alt="everest">
+
+					<div class="info">
+						<h2>EVEREST CLIMBING</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor.</p>
+						<button>LEARN MORE</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/holiday.jpg" alt="walking holiday">
+
+					<div class="info">
+						<h2>WALKING HOLIDAYS</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor.</p>
+						<button>LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="explore">
+			<h1>EXPLORE THE WORLD</h1>
+			<span class="line3"></span>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsam nihil quod tempora est obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+			<button onclick="window.open('Booking-page.html','_blank')">BOOK NOW</button>
+
+		</div>
+	</section>
+
+	<section  id="upcomings"> 
+		<div class="destination">
+			<div class="txt">
+				<h1>UPCOMING TOURS & DESTINATION</h1>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad assumenda ratione qui laudantium reiciendis possimus illum minima iure! Assumenda minima voluptatibus quia sed nemo rem quas provident doloremque voluptatem nesciunt.</p>
+				<button>LEARN MORE</button>
+			</div>
+			<div class="photos">
+				<div class="box">
+					<img src="img/t1.jpeg" alt="">
+				</div>
+				<div class="box">
+					<img src="img/t12.jpg" alt="">
+				</div>
+				<div class="box">
+					<img src="img/t3.jpg" alt="">
+				</div>
+				<div class="box">
+					<img src="img/t4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer >
+		<span>
+			123 Fifth Avenue, NY 10001 | New york USA | <a href="mailto:contact@tours-travel.com">E-mail:contact@tours-travel.com</a>
+		</span>
+		<br>
+		<span>Copyright &copy; 2020 Paradise Adventure</span>
+		<hr color="white" width="100px">
+		<span class="social" id="contact">
+			<a href="#"><img src="img/facebook.svg" alt=""></a>
+			<a href="#"><img src="img/twitter.svg" alt=""></a>
+			<a href="#"><img src="img/instagram.svg" alt=""></a>
+			<a href="#"><img src="img/google.svg" alt=""></a>
+		</span>
+	</footer>
+
+</body>
+<script type="text/javascript">
+	function onClick() {
+    document.getElementById('hemburger').classList.toggle("hemburger-change");
+    document.getElementById('list').classList.toggle("list-change");
+    document.getElementById('menu').classList.toggle("change");
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</html>

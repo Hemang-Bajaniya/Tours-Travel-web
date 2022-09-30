@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	/* color: var(--secondary); */
+	font-family: verdana;
+}
+
+*::selection{
+	background-color:lightslategray;
+	color: black;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+	--primary : #6bccefe9;
+	--secondary : whitesmoke;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid var(--primary);
+}
+
+header{
+	height: fit-content;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	width: 100%;
+	z-index: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+}
+
+header nav img{
+	height: 7rem;
+	transform: translateY(-1rem);
+}
+
+nav .nav-link{
+	display: flex;
+	width: fit-content;
+}
+
+nav .nav-link a{
+	margin: 1.5rem 2rem;
+	transition: .4s ease;
+	color: black;
+	height: fit-content;
+	font-weight: 800px;
+}
+
+nav .nav-link a:hover{
+	color: var(--primary);
+}
+
+nav .nav-link button{
+	height: 2.2rem;
+	width: 6rem;
+	margin: 1rem 2rem;
+	border: none;
+	border-radius: 1.1rem;
+	background-color: var(--primary);
+	transition: .4s ease;
+	border: 2px solid var(--primary);
+	color: black;
+}
+
+nav .nav-link button:hover{
+	background-color: transparent;
+	color: var(--primary);
+	border: 2px solid var(--primary);
+	cursor: pointer;
+}
+
+form input:focus{
+	border-color: var(--primary);
+	border-style: solid;
+}
+
+
+.bar{
+    height: 0.2em;
+    width: 90%;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 20px;
+	transition: .5s ease;
+}
+
+.bar2{
+    transform: translateY(3px);
+	width: 50%;
+	position: relative;
+	left: 12px;
+}
+
+.bar3{
+    transform: translateY(6px);
+}
+
+
+.list ul{
+	display: none;
+	transition: .4s ease;
+}
+nav .list ul{
+	margin-top: 1rem;
+	margin-left: 3rem;
+}
+
+nav .list ul li{
+	padding: 2rem 0rem;
+	padding-left: 1.2rem;
+	color: black;
+}
+
+nav .list ul button{
+	height: 2.2rem;
+	width: 6rem;
+	margin: 1rem 2rem;
+	border: none;
+	border-radius: 1.1rem;
+	background-color: var(--primary);
+	transition: .4s ease;
+	border: 2px solid var(--primary);
+	color: black;
+	margin-bottom: 1rem;	
+	margin-left: 0.6rem;
+}
+
+nav .list ul button{
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+nav .hemburger{
+	height: 1.2rem;
+	width: 1.9rem;
+	margin-top: 2.5rem;
+	margin-left: 8rem;
+	z-index: 1;
+}
+
+nav .hemburger:hover{
+	cursor: pointer;
+}
+
+nav .menu{
+	height: fit-content;
+	width: 185px;
+	transition: .3s ease;
+	display: none;
+	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 1rem;
+}
+
+nav .menu a{
+	color: black;
+}
+
+.change{
+    background-color: var(--primary);
+    z-index: 100;
+}
+
+.list-change ul
+{
+	display: block;
+}
+
+nav .hemburger-change{
+  margin-left: 5.1rem;
+	transition: .5s ease-in-out;	
+}
+
+nav .hemburger-change .bar1{
+    transform: translateY(2px) rotate(-45deg);
+}
+
+nav .hemburger-change .bar2{
+    display: none;
+}
+
+nav .hemburger-change .bar3{
+    transform: translateY(-2px) rotate(45deg);
+}
+
+section{
+	width: 80vw;
+	position: relative;
+	padding: 0 1rem;
+	min-width: 300px;
+}
+	
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin-top: 1.5rem;
+}
+
+.banner{
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	background-color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: auto;
+}
+
+.banner img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	min-width: 300px;
+}
+
+.banner .txt{
+	position: relative;
+}
+
+.banner .txt h1{
+	font-size: 3rem;
+	color: var(--primary);
+}
+.banner .txt button{
+	height: 2.5rem;
+	width: 7rem;
+	background-color: var(--primary);
+	color: white;
+	border-radius: 3px;
+	border: 2px solid var(--primary);
+	display: block;
+	margin: 1rem auto;
+	transition: .5s ease;
+	letter-spacing: 1px;
+	display: block;
+	clear: left right;
+}
+
+.banner .txt button:hover{
+	background-color: transparent;
+	color: var(--primary);
+}
+
+.book{
+	height: 6rem;
+	width: 100%;
+	margin: 0 auto;
+	transition: .3s ease;
+}
+
+.book form{
+	height: 100%;
+	max-width: 90%;
+	display: flex;
+	background-color: white;
+	transform: translateY(-30px);
+	box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	font-size: .8rem;
+	color: #333;
+	font-weight: bold;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 0 1rem;
+	min-width: 80%;
+}
+
+.book form input{
+	padding: 4px;
+	outline: none;
+	width: 10rem;
+}
+
+.book .block{
+	display: block;
+	width: fit-content;
+	margin: 10px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.book .block button
+{
+	height: 2rem;
+	width: 5.5rem;
+	background-color: var(--primary);
+	border: none;
+	border-radius: 4px;
+	border: 1px solid var(--primary);
+	transition: .4s ease;
+	letter-spacing: 1px;
+}
+
+
+.book .block button:hover{
+	background-color: transparent;
+	color: var(--primary);
+}
+
+@media screen and (max-width: 800px){
+	nav .nav-link{
+		display: none;
+	}
+	nav .menu{
+		display: block;
+	}
+	.txt{
+	margin-left: 0%;
+	}
+	.banner{
+		margin-top: 1rem;
+	}
+	.main{
+		margin-top: 4.6rem;
+	}
+
+}
+
+@media screen and (max-width: 1343px)
+{
+	.book{
+		height: fit-content;
+	}
+	form{
+		padding: 1rem 0rem;
+	}
+}
+
+
+@media screen and (max-width: 520px){
+	.book{
+		width: 80%;
+	}
+}
